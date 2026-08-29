@@ -615,49 +615,103 @@
       }
     }
 
-    @media (max-width:560px){
+  @media (max-width:560px){
 
-      .album-grid{
-        grid-template-columns:1fr;
+      body{
+        font-size:16px;
       }
 
-      .hero{
-        padding:90px 0 80px;
+      .wrap{
+        width:92%;
+      }
+
+      .topbar{
+        padding:8px 0;
+      }
+
+      .nav{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+      }
+
+      .brand{
+        width:100%;
       }
 
       .brand span:last-child{
-        font-size:14px;
+        font-size:13px;
+        line-height:1.2;
       }
+
+      .navlinks{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px 12px;
+      }
+
+      .navlinks a{
+        font-size:13px;
+        padding:6px 0;
+      }
+
+      .hero{
+        padding:70px 0 55px;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:clamp(32px,10vw,44px);
+        line-height:1.05;
+      }
+
+      .hero p{
+        font-size:17px;
+        line-height:1.5;
+      }
+
+      h2{
+        font-size:clamp(27px,8vw,36px);
+        line-height:1.1;
+      }
+
+      .lead{
+        font-size:17px;
+        line-height:1.55;
+      }
+
+      .card{
+        padding:20px;
+        border-radius:14px;
+      }
+
+      .card h3{
+        font-size:20px;
+      }
+
+      .album-grid{
+        grid-template-columns:1fr;
+        gap:22px;
+      }
+
+      img{
+        max-width:100%;
+        height:auto;
+      }
+
+      .btn,
+      .navcta{
+        font-size:14px;
+        padding:10px 14px;
+      }
+
+      section{
+        padding-left:0;
+        padding-right:0;
+      }
+
     }
-
-  </style>
-</head>
-
-<body>
-
-<header class="topbar">
-  <div class="wrap nav">
-
-    <a class="brand" href="#accueil">
-      <span class="monogram">DN</span>
-      <span>Duo Di Mosole–Neuhauser</span>
-    </a>
-
-    <nav class="navlinks">
-      <a href="#duo">Le Duo</a>
-      <a href="#programme">Programme</a>
-      <a href="#distinctions">Distinctions</a>
-      <a href="#concerts">Concerts</a>
-      <a href="#discographie">Discographie</a>
-      <a href="#ecouter">Écouter</a>
-      <a class="navcta" href="#contact">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-
-<main>
 
 <!-- =========================
      ACCUEIL
