@@ -158,10 +158,16 @@
       .modal-cover{width:130px}
     }
     @media (max-width:560px){
-      .duo-names{white-space:normal}
+      .duo-names{
+  white-space:normal;
+  display:block;
+  width:100%;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
       .album-grid{grid-template-columns:1fr}
       .hero{padding:90px 0 80px}
-      .hero h1{font-size:28px;line-height:1.12;overflow-wrap:anywhere;word-break:normal}
+      .hero h1{font-size:30px;line-height:1.08}
       .brand span:last-child{font-size:14px}
       .album-modal{padding:10px}
       .modal-panel{max-height:94vh;border-radius:16px}
