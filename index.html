@@ -140,6 +140,9 @@
     .contact-card{border:1px solid rgba(215,180,106,.35);background:rgba(255,255,255,.05);padding:28px;border-radius:18px}
     footer{background:#030b14;color:#bdcad6;padding:26px 0;font-size:14px}
     footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .mobile-break::after{
+  content:" — ";
+}
 .menu-toggle{display:none}
     /* TELEPHONE */
     @media (max-width:900px){
@@ -185,6 +188,7 @@
       .modal-cover{width:130px}
     }
     @media (max-width:560px){
+      .mobile-break::after{content:""}
       .mobile-break{display:block}
 .duo-names span{white-space:nowrap}
       .duo-names{
