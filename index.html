@@ -7,7 +7,7 @@
   <style>
     :root{
       --navy:#071b33;
-      --navy2:#0b2a4e;
+      --navy2:#0b2a4e;Correction affichage du nom sur téléphon
       --gold:#d7b46a;
       --gold2:#f0d18a;
       --cream:#f6f1e7;
@@ -158,6 +158,8 @@
       .modal-cover{width:130px}
     }
     @media (max-width:560px){
+      .mobile-break{display:block}
+.duo-names span{white-space:nowrap}
       .duo-names{
   white-space:normal;
   display:block;
@@ -198,7 +200,7 @@
 <section class="hero" id="accueil">
   <div class="wrap hero-inner">
     <div class="eyebrow">Duo de guitares classiques</div>
-    <h1><span class="duo-names">Serge Di Mosole — Christophe Neuhauser</span></h1>
+    <h1><span class="duo-names"><span>Serge Di Mosole</span><span class="mobile-break"></span><span>Christophe&nbsp;Neuhauser</span></span></h1>
     <div class="tagline">1 style • 2 guitares • 4 siècles de musique</div>
     <p class="sub">Deux guitares en dialogue pour un voyage musical à travers les siècles, entre élégance classique, passion espagnole et couleurs sud-américaines.</p>
     <div class="hero-buttons">
