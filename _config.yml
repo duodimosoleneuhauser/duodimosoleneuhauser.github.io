@@ -1,0 +1,4 @@
+# Configuration GitHub Pages (Jekyll). Les dossiers commençant par "_" ne sont pas publiés.
+exclude:
+  - README.md
+  - _sources

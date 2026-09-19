@@ -3,217 +3,215 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duo Di Mosole–Neuhauser | Guitares classiques</title>
+  <title>Duo Di Mosole–Neuhauser | Duo de guitares classiques</title>
+  <meta name="description" content="Duo de guitares classiques Serge Di Mosole et Christophe Neuhauser : concerts, festivals, salons de musique et tournées. Répertoire classique, espagnol et sud-américain, 4 siècles de musique.">
+  <meta name="theme-color" content="#071b33">
+  <link rel="canonical" href="https://duodimosoleneuhauser.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Partage sur les réseaux et messageries -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Duo Di Mosole–Neuhauser">
+  <meta property="og:title" content="Duo Di Mosole–Neuhauser | Duo de guitares classiques">
+  <meta property="og:description" content="Deux guitares en dialogue : classique, Espagne, Amérique latine. Concerts, festivals, salons de musique et tournées.">
+  <meta property="og:url" content="https://duodimosoleneuhauser.com/">
+  <meta property="og:image" content="https://duodimosoleneuhauser.com/img/og-duo-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Serge Di Mosole et Christophe Neuhauser en concert, guitares classiques">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Duo Di Mosole–Neuhauser | Duo de guitares classiques">
+  <meta name="twitter:description" content="Deux guitares en dialogue : classique, Espagne, Amérique latine. Concerts, festivals, salons de musique et tournées.">
+  <meta name="twitter:image" content="https://duodimosoleneuhauser.com/img/og-duo-1200x630.jpg">
+
+  <!-- Police et image d'accueil chargées en priorité -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="img/duo-concert-1600.jpg" media="(min-width: 561px)">
+  <link rel="preload" as="image" href="img/duo-concert-960.jpg" media="(max-width: 560px)">
+
+  <!-- Données structurées pour Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Duo Di Mosole–Neuhauser",
+    "alternateName": "Duo Di Mosole Neuhauser",
+    "url": "https://duodimosoleneuhauser.com/",
+    "image": "https://duodimosoleneuhauser.com/img/og-duo-1200x630.jpg",
+    "logo": "https://duodimosoleneuhauser.com/img/logo-duo-512.jpg",
+    "description": "Duo de guitares classiques réunissant Serge Di Mosole et Christophe Neuhauser. Répertoire classique, espagnol et sud-américain, compositions et arrangements originaux. Concerts, festivals, salons de musique et tournées.",
+    "genre": ["Musique classique", "Guitare classique", "Musique espagnole", "Musique sud-américaine"],
+    "email": "duodimosoleneuhauser@gmail.com",
+    "telephone": "+33673793785",
+    "address": { "@type": "PostalAddress", "addressCountry": "FR" },
+    "member": [
+      { "@type": "Person", "name": "Serge Di Mosole", "jobTitle": "Guitariste et compositeur" },
+      { "@type": "Person", "name": "Christophe Neuhauser", "jobTitle": "Guitariste et arrangeur" }
+    ],
+    "sameAs": [
+      "https://soundcloud.com/duo-di-mosole-neuhauser",
+      "https://www.youtube.com/@dimosoleneuhauser"
+    ],
+    "album": {
+      "@type": "MusicAlbum",
+      "name": "Classique — De Bach à Piazzolla",
+      "byArtist": { "@type": "MusicGroup", "name": "Duo Di Mosole–Neuhauser" },
+      "url": "https://open.spotify.com/intl-fr/album/370iWotEQO1MpW9eJ1Jl8D"
+    }
+  }
+  </script>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
     :root{
       --navy:#071b33;
       --navy2:#0b2a4e;
       --gold:#d7b46a;
       --gold2:#f0d18a;
+      --gold-dark:#7d5d20;   /* doré lisible sur fond clair (contraste AA) */
       --cream:#f6f1e7;
+      --cream2:#eee8dc;
       --white:#ffffff;
       --text:#17202b;
-      --muted:#6c7682;
+      --muted:#5f6975;
       --max:1180px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
     body{margin:0;font-family:'Manrope',Arial,sans-serif;color:var(--text);background:var(--cream);line-height:1.65}
     a{color:inherit}
+    img{max-width:100%}
     .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-.quick-links{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  width:100%;
-  background:#071b33;
-}
 
-.quick-link{
-  box-sizing:border-box;
-  padding:22px 15px;
-  text-align:center;
-  text-decoration:none;
-  color:white;
-  border-right:1px solid rgba(255,255,255,.12);
-}
+    /* ACCESSIBILITÉ */
+    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+    .skip-link{position:absolute;left:-999px;top:0;z-index:300;background:var(--gold);color:var(--navy);padding:10px 16px;font-weight:700;border-radius:0 0 10px 0;text-decoration:none}
+    .skip-link:focus{left:0}
+    .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
-.quick-link:last-child{
-  border-right:none;
-}
-
-.quick-icon{
-  color:var(--gold2);
-  font-size:23px;
-  margin-bottom:5px;
-}
-
-.quick-title{
-  color:var(--gold2);
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:.12em;
-}
-
-.quick-text{
-  margin-top:5px;
-  font-size:11px;
-  color:#dbe5ef;
-  line-height:1.35;
-}
     /* MENU */
     .topbar{position:sticky;top:0;z-index:100;background:rgba(7,27,51,.96);border-bottom:1px solid rgba(255,255,255,.10)}
-    .nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none}
-    .monogram{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:18px}
+    .nav{min-height:74px;display:flex;align-items:center;justify-content:flex-start;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none;white-space:nowrap;margin-right:auto}
+    .monogram{width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;object-fit:cover;display:block;flex:none;background:var(--navy)}
     .navlinks{display:flex;align-items:center;gap:18px}
-    .navlinks a{color:white;text-decoration:none;font-size:12px;text-transform:uppercase;letter-spacing:.10em}
-    .navlinks a:hover{color:var(--gold2)}
+    .navlinks a,.navcta{color:white;text-decoration:none;font-size:12px;text-transform:uppercase;letter-spacing:.10em;white-space:nowrap}
+    .navlinks a:hover,.navcta:hover{color:var(--gold2)}
     .navcta{border:1px solid var(--gold);padding:9px 14px;border-radius:999px}
+    .menu-toggle{display:none}
 
     /* ACCUEIL */
-.hero{
-  background:
-    linear-gradient(90deg,#071b33 0%,#071b33 38%,rgba(7,27,51,.96) 48%,rgba(7,27,51,.45) 62%,rgba(7,27,51,0) 78%),
-    url("photo%20du%20duo%20en%20concert%20-%20Copie.jpg") right center / auto 92% no-repeat,
-    #071b33;
-  color:white;
-  text-align:left;
-  min-height:620px;
-  padding:90px 0;
-  display:flex;
-  align-items:center;
-}
+    .hero{
+      background:
+        linear-gradient(90deg,#071b33 0%,#071b33 38%,rgba(7,27,51,.96) 48%,rgba(7,27,51,.45) 62%,rgba(7,27,51,0) 78%),
+        url("img/duo-concert-1600.jpg") right center / auto 100% no-repeat,
+        #071b33;
+      color:white;
+      min-height:clamp(620px,38vw,860px);
+      padding:90px 0;
+      display:flex;
+      align-items:center;
+    }
+    .hero-inner{width:min(var(--max),calc(100% - 40px));margin:auto;padding-right:min(48%,580px)}
+    .eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.24em;font-size:12px;margin-bottom:18px}
+    .hero h1{margin:0;font-size:clamp(25px,2.4vw,34px);font-weight:500;line-height:1.12;max-width:500px}
+    .duo-name-line{white-space:nowrap}
+    .tagline{margin:20px 0 0;color:var(--gold2);text-transform:uppercase;letter-spacing:.10em;font-size:clamp(13px,1.2vw,15px);font-weight:600;max-width:600px}
+    .sub{max-width:540px;margin:16px 0 0;font-size:15px;line-height:1.5;color:#e5edf5}
+    .hero-buttons{margin-top:30px;display:flex;justify-content:flex-start;gap:12px;flex-wrap:wrap}
 
-.hero-inner{
-  width:min(var(--max),calc(100% - 40px));
-  max-width:1180px;
-  margin:auto;
-  padding-right:48%;
-}
+    .btn{display:inline-block;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:bold;border:1px solid transparent}
+    .btn-primary{background:var(--gold);color:var(--navy)}
+    .btn-primary:hover{background:var(--gold2)}
+    .btn-outline{border-color:rgba(255,255,255,.45);color:white}
+    .btn-outline:hover{border-color:var(--gold2);color:var(--gold2)}
+    .btn-navy{border-color:rgba(7,27,51,.35);color:var(--navy)}
+    .btn-navy:hover{border-color:var(--navy);background:white}
 
-.eyebrow{
-  color:var(--gold2);
-  text-transform:uppercase;
-  letter-spacing:.24em;
-  font-size:12px;
-  margin-bottom:18px;
-}
-
-.hero h1{
-  margin:0;
-  font-size:clamp(25px,2.4vw,34px);
-  font-weight:500;
-  line-height:1.12;
-  max-width:500px;
-}
-.duo-name-line{
-  display:inline;
-  white-space:nowrap;
-}
-.duo-names{
-  white-space:normal;
-}
-
-.tagline{
-  margin:20px 0 0;
-  color:var(--gold2);
-  text-transform:uppercase;
-  letter-spacing:.10em;
-  font-size:clamp(12px,1.2vw,15px);
-  font-weight:600;
-  max-width:600px;
-  white-space:nowrap;
-}
-
-.sub{
-  max-width:540px;
-  margin:16px 0 0;
-  font-size:13px;
-  line-height:1.4;
-  color:#e5edf5;
-  font-style:normal;
-}
-
-.hero-buttons{
-  margin-top:30px;
-  display:flex;
-  justify-content:flex-start;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  display:inline-block;
-  padding:12px 20px;
-  border-radius:999px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.btn-primary{
-  background:var(--gold);
-  color:var(--navy);
-}
-
-.btn-outline{
-  border:1px solid rgba(255,255,255,.45);
-  color:white;
-}
+    /* ACCÈS RAPIDES */
+    .quick-links{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy);border-top:1px solid rgba(255,255,255,.08)}
+    .quick-link{display:block;padding:22px 15px;text-align:center;text-decoration:none;color:white;border-right:1px solid rgba(255,255,255,.12)}
+    .quick-link:last-child{border-right:0}
+    .quick-link:hover{background:rgba(255,255,255,.04)}
+    .quick-icon{display:block;width:26px;height:26px;margin:0 auto 8px;color:var(--gold2)}
+    .quick-title{color:var(--gold2);font-size:12px;font-weight:700;letter-spacing:.12em}
+    .quick-text{margin-top:5px;font-size:13px;color:#dbe5ef;line-height:1.35}
 
     /* SECTIONS */
     section{padding:88px 0}
-    .section-kicker{color:#9b762e;text-transform:uppercase;letter-spacing:.20em;font-size:12px;font-weight:bold;margin-bottom:7px}
+    .section-kicker{color:var(--gold-dark);text-transform:uppercase;letter-spacing:.20em;font-size:12px;font-weight:bold;margin-bottom:7px}
     h2{margin:0 0 22px;color:var(--navy);font-size:clamp(29px,3.8vw,46px);line-height:1.1;font-weight:500}
     .lead{max-width:900px;font-size:18px;color:#3e4a59}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 
     /* LE DUO */
-    .duo-table{width:100%;border-collapse:separate;border-spacing:20px 0;margin-top:36px;table-layout:fixed}
-    .duo-table td{width:50%;vertical-align:top;background:white;border:1px solid rgba(7,27,51,.10);padding:30px;border-radius:18px}
-    .duo-table h3{margin:0;color:var(--navy);font-size:27px}
-    .role{color:#9b762e;font-weight:bold;margin:4px 0 16px}
+    .duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+    .duo-card{background:white;border:1px solid rgba(7,27,51,.10);padding:30px;border-radius:18px}
+    .duo-card h3{margin:0;color:var(--navy);font-size:27px}
+    .role{color:var(--gold-dark);font-weight:bold;margin:4px 0 16px}
     .duo-quote{max-width:800px;margin:38px auto 0;padding:18px 20px;text-align:center;font-size:21px;font-style:italic;border-top:1px solid rgba(215,180,106,.65);border-bottom:1px solid rgba(215,180,106,.65)}
     .formats{text-align:center;margin-top:24px}
 
     /* PROGRAMME */
-    .program{background:#eee8dc}
+    .program{background:var(--cream2)}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
     .card{background:white;padding:28px;border-radius:18px;border-top:3px solid var(--gold);box-shadow:0 12px 30px rgba(7,27,51,.06)}
     .card h3{margin:0 0 10px;color:var(--navy);font-size:21px}
+    .card p{margin:0}
 
-    /* DISTINCTIONS */
-    .awards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
-    .award{background:white;border:1px solid rgba(7,27,51,.10);border-radius:16px;padding:24px;margin-top:18px}
-    .award strong{display:block;color:var(--navy);font-size:18px;margin-bottom:5px}
-    .award span{color:var(--muted)}
-
-    /* PROCHAIN CONCERT */
+    /* CONCERTS */
     .concerts{background:linear-gradient(180deg,#071b33 0%,#0b2a4e 100%);color:white;position:relative;overflow:hidden}
     .concerts:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(215,180,106,.10),transparent 32%);pointer-events:none}
     .concerts .wrap{position:relative;z-index:1}
     .concerts .section-kicker{color:var(--gold2)}
     .concerts h2{color:white}
     .concerts .lead{color:#d7e2ed}
-    .concert-feature{margin-top:36px;display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:42px;align-items:center}
-    .concert-poster{background:rgba(255,255,255,.04);border:1px solid rgba(215,180,106,.34);padding:12px;border-radius:18px;box-shadow:0 22px 56px rgba(0,0,0,.26)}
+    .concert-feature{margin-top:36px;display:grid;grid-template-columns:minmax(260px,.6fr) minmax(0,1.4fr);gap:42px;align-items:center}
+    .concert-poster{background:rgba(255,255,255,.04);border:1px solid rgba(215,180,106,.34);padding:12px;border-radius:18px;box-shadow:0 22px 56px rgba(0,0,0,.26);max-width:380px}
     .concert-poster img{width:100%;height:auto;display:block;border-radius:10px}
     .concert-info{border-left:2px solid var(--gold);padding-left:30px}
-    .concert-date{color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:14px;font-weight:bold;margin-bottom:10px}
-    .concert-info h3{margin:0 0 12px;font-size:clamp(30px,4vw,48px);color:white;font-weight:500}
-    .concert-info p{color:#dce6ef;font-size:18px}
+    .concert-date{color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:bold;margin-bottom:10px}
+    .concert-info h3{margin:0 0 12px;font-size:clamp(26px,3vw,38px);color:white;font-weight:500}
+    .concert-info p{color:#dce6ef;font-size:17px;margin:0 0 12px}
     .concert-note{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);color:#cbd7e3}
 
+    /* DISTINCTIONS */
+    .awards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+    .award{background:white;border:1px solid rgba(7,27,51,.10);border-radius:16px;padding:24px}
+    .award > strong{display:block;color:var(--navy);font-size:18px;margin-bottom:5px}
+    .award span{color:var(--muted)}
+    .award-wide{grid-column:1/-1}
+    .video-embed{position:relative;height:0;padding-top:56.25%;margin-top:20px;border-radius:12px;overflow:hidden;background:var(--navy)}
+    .video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+    /* PRESSE */
+    .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .quote-card{background:white;border:1px solid rgba(7,27,51,.10);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px}
+    .quote-card blockquote{margin:0;font-size:18px;font-style:italic;line-height:1.45;color:var(--navy);flex:1}
+    .quote-card cite{font-style:normal;color:var(--gold-dark);font-weight:700;font-size:14px}
+    .quote-card small{color:var(--muted)}
+    .press-feature{margin-top:24px;background:white;border:1px solid rgba(7,27,51,.10);border-radius:16px;padding:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+    .press-feature strong{display:block;color:var(--navy);font-size:18px;margin-bottom:4px}
+    .press-feature span{color:var(--muted)}
+
     /* DISCOGRAPHIE */
-    .discography{background:#eee8dc}
+    .discography{background:var(--cream2)}
     .album-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:17px;margin-top:34px}
     .album{background:white;border:1px solid rgba(7,27,51,.10);border-radius:17px;padding:10px;box-shadow:0 12px 28px rgba(7,27,51,.08);transition:transform .2s ease,box-shadow .2s ease}
     .album:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(7,27,51,.13)}
-    .album button{all:unset;display:block;width:100%;cursor:pointer}
-    .album img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
+    .album button{all:unset;display:block;width:100%;cursor:pointer;border-radius:12px}
+    .album button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .album img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
     .album h3{margin:13px 4px 4px;color:var(--navy);font-size:17px;line-height:1.25}
     .album p{margin:0 4px 5px;color:var(--muted);font-size:13px}
-    .album .album-hint{display:block;margin:8px 4px 2px;color:#9b762e;font-size:12px;font-weight:bold}
+    .album .album-hint{display:block;margin:8px 4px 2px;color:var(--gold-dark);font-size:12px;font-weight:bold}
     .duo-album{border-color:rgba(215,180,106,.75)}
+    .album-scroll-hint{display:none}
 
     /* FENÊTRES DISCOGRAPHIE */
     body.modal-open{overflow:hidden}
@@ -223,7 +221,7 @@
     .modal-close{position:sticky;top:14px;float:right;margin:14px 14px 0 0;width:42px;height:42px;border-radius:50%;border:1px solid rgba(215,180,106,.65);background:#071b33;color:var(--gold2);font-size:28px;line-height:1;cursor:pointer;z-index:2}
     .modal-inner{padding:34px 40px 40px}
     .modal-head{display:grid;grid-template-columns:180px 1fr;gap:26px;align-items:start;padding-right:48px}
-    .modal-cover{width:180px;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.16);box-shadow:0 16px 34px rgba(0,0,0,.25)}
+    .modal-cover{width:180px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:12px;border:1px solid rgba(255,255,255,.16);box-shadow:0 16px 34px rgba(0,0,0,.25)}
     .modal-kicker{color:var(--gold2);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:bold;margin-bottom:6px}
     .modal-title{margin:0;color:white;font-size:clamp(28px,4vw,42px);font-weight:500;line-height:1.1}
     .modal-artist{margin:10px 0 0;color:#cdd9e4;font-size:18px}
@@ -240,11 +238,45 @@
     .streaming-links a{display:inline-block;padding:10px 15px;border:1px solid rgba(215,180,106,.65);border-radius:999px;color:white;text-decoration:none;font-weight:bold;background:rgba(255,255,255,.04)}
     .streaming-links a:hover{background:var(--gold);color:var(--navy)}
 
-    /* ECOUTER */
+    /* FENÊTRE CONTACT */
+    .modal-panel.modal-contact{width:min(600px,100%)}
+    .modal-lead{margin:14px 0 0;color:#dce8f3;font-size:17px;line-height:1.55}
+    .modal-contact-list{display:grid;margin-top:24px}
+    .modal-contact-list a{color:white;text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.15);font-size:17px}
+    .modal-contact-list a:hover{color:var(--gold2)}
+    .modal-contact-actions{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+
+    /* ÉCOUTER & VOIR */
     .media{background:var(--cream)}
-    .media-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
-    .media-box{background:white;border:1px solid rgba(7,27,51,.10);border-radius:18px;padding:30px}
-    .media-box h3{margin:0 0 10px;color:var(--navy);font-size:25px}
+    .video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:34px}
+    .extrait{background:white;border:1px solid rgba(7,27,51,.10);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+    .extrait-visuel{position:relative;height:0;padding-top:56.25%;background:var(--navy);overflow:hidden}
+    .extrait-visuel > *{position:absolute;top:0;left:0;width:100%;height:100%}
+    .extrait-lecture{border:0;padding:0;margin:0;background:none;cursor:pointer;display:block;font:inherit;color:inherit}
+    .extrait-lecture img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+    .extrait-lecture:hover img{transform:scale(1.03)}
+    .extrait-lecture:focus-visible{outline:3px solid var(--gold);outline-offset:-4px}
+    .extrait-bouton{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(7,27,51,.85);border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);pointer-events:none}
+    .extrait-visuel iframe{border:0}
+    .extrait-texte{padding:20px 24px 22px}
+    .extrait-texte h3{margin:0 0 6px;color:var(--navy);font-size:20px}
+    .extrait-texte p{margin:0 0 12px;color:var(--muted)}
+    .extrait-texte a{font-size:14px;font-weight:600;color:var(--gold-dark)}
+    .extrait.soundcloud{background:linear-gradient(145deg,#071b33,#0b2a4e);color:white;justify-content:center;padding:30px}
+    .extrait.soundcloud h3{color:var(--gold2);margin:0 0 8px;font-size:24px}
+    .extrait.soundcloud p{color:#dbe5ef;margin:0 0 18px}
+
+    /* PROGRAMMATEURS */
+    .pro{background:var(--cream2)}
+    .pro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .pro-card{background:white;border-radius:18px;padding:28px;border-top:3px solid var(--gold);box-shadow:0 12px 30px rgba(7,27,51,.06)}
+    .pro-card h3{margin:0 0 12px;color:var(--navy);font-size:21px}
+    .pro-card ul{margin:0;padding-left:18px;color:#3e4a59}
+    .pro-card li{margin:6px 0}
+    .doc-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .doc-list a{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:12px 14px;border:1px solid rgba(7,27,51,.12);border-radius:12px;text-decoration:none;color:var(--navy);font-weight:600;background:var(--cream)}
+    .doc-list a:hover{border-color:var(--gold);background:white}
+    .doc-list small{color:var(--muted);font-weight:400;white-space:nowrap}
 
     /* CONTACT */
     .contact{background:linear-gradient(135deg,#04101e,#0b3158);color:white}
@@ -253,111 +285,81 @@
     .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:34px}
     .contact-list{display:grid;gap:10px;margin-top:24px}
     .contact-list a{color:white;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.15);padding:10px 0}
-    .contact-card{border:1px solid rgba(215,180,106,.35);background:rgba(255,255,255,.05);padding:28px;border-radius:18px}
+    .contact-list a:hover{color:var(--gold2)}
+    .contact-card{border:1px solid rgba(215,180,106,.35);background:rgba(255,255,255,.05);padding:28px;border-radius:18px;text-align:center}
+    .contact-card img{width:140px;height:140px;border-radius:50%;border:1px solid rgba(215,180,106,.5);margin:0 auto 16px;display:block}
+    .contact-card h3{color:var(--gold2);font-size:26px;margin:0 0 10px}
+    .contact-card p{margin:0 0 10px}
+
     footer{background:#030b14;color:#bdcad6;padding:26px 0;font-size:14px}
-    footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+    footer nav{display:flex;gap:16px;flex-wrap:wrap}
+    footer a{color:#dbe5ef;text-decoration:none}
+    footer a:hover{color:var(--gold2)}
 
-    .mobile-break::after{
-      content:" — ";
+    /* TABLETTE ET TÉLÉPHONE */
+    /* Menu replié dès que les 8 entrées ne tiennent plus sur une ligne */
+    @media (max-width:1120px){
+      .nav{gap:12px}
+      .menu-toggle{display:inline-grid;place-items:center;width:44px;height:44px;padding:0;background:transparent;border:1px solid var(--gold);color:var(--gold2);border-radius:10px;cursor:pointer}
+      .menu-toggle svg{width:22px;height:22px}
+      .menu-toggle .icon-close{display:none}
+      .menu-toggle[aria-expanded="true"]{background:var(--gold);color:var(--navy)}
+      .menu-toggle[aria-expanded="true"] .icon-open{display:none}
+      .menu-toggle[aria-expanded="true"] .icon-close{display:block}
+      .navlinks{display:none}
+      .navlinks.mobile-open{display:flex;position:absolute;top:70px;right:20px;flex-direction:column;gap:10px;background:#061321;border:1px solid var(--gold);padding:14px 22px;border-radius:12px;z-index:1000;text-align:center}
     }
-    .menu-toggle{display:none}
-    /* TELEPHONE */
     @media (max-width:900px){
-      .menu-toggle{
-        display:block;
-        background:transparent;
-        border:1px solid var(--gold);
-        color:var(--gold2);
-        padding:8px 12px;
-        border-radius:8px;
-        font:inherit;
-        cursor:pointer;
-      }
-      .navlinks a:not(.navcta){display:none}
-      .navlinks.mobile-open{
-        display:flex;
-        position:absolute;
-        top:70px;
-        right:20px;
-        flex-direction:column;
-        gap:10px;
-        background:#061321;
-        border:1px solid var(--gold);
-        padding:14px;
-        border-radius:12px;
-        z-index:1000;
-      }
-      .navlinks.mobile-open a{display:block !important}
-
-      .navlinks a:not(.navcta){display:none}
-      .duo-table,.duo-table tbody,.duo-table tr,.duo-table td{display:block;width:100%}
-      .duo-table{border-spacing:0}
-      .duo-table td{margin-bottom:18px}
-      .cards{grid-template-columns:1fr}
-      .awards{grid-template-columns:1fr}
-      .album-grid{grid-template-columns:repeat(2,1fr)}
-      .media-grid{grid-template-columns:1fr}
-      .contact-grid{grid-template-columns:1fr}
+      .duo-grid,.cards,.awards,.quotes,.video-grid,.contact-grid,.pro-grid{grid-template-columns:1fr}
+      /* Discographie : bande horizontale à faire défiler, une pochette après l'autre */
+      .album-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:6px 20px 18px;margin:28px -20px 0;scrollbar-width:thin;scrollbar-color:rgba(7,27,51,.35) transparent}
+      .album{flex:0 0 min(62vw,260px);scroll-snap-align:start}
+      .album:hover{transform:none}
+      .album-scroll-hint{display:block;margin:0 0 -8px;color:var(--muted);font-size:13px}
       .concert-feature{grid-template-columns:1fr;gap:28px}
+      .concert-poster{max-width:320px}
       .concert-info{border-left:0;border-top:2px solid var(--gold);padding-left:0;padding-top:22px}
       .modal-head{grid-template-columns:130px 1fr;gap:20px}
       .modal-cover{width:130px}
     }
-    @media (max-width:560px){
-      .mobile-break::after{content:""}
-      .mobile-break{display:block}
-      .duo-names span{white-space:nowrap}
-      .duo-names{
-        white-space:normal;
-        display:block;
-        width:100%;
-        max-width:100%;
-        overflow-wrap:break-word;
+    @media (max-width:700px){
+      .quick-links{grid-template-columns:1fr 1fr}
+      .quick-link{border-bottom:1px solid rgba(255,255,255,.12)}
+      .quick-link:nth-child(2n){border-right:0}
+    }
+    /* Accueil empilé : texte puis photo entière (hauteur = 71,5 % de la largeur, ratio de la photo) */
+    @media (max-width:900px){
+      .hero{
+        background:
+          linear-gradient(180deg,rgba(7,27,51,.35),rgba(7,27,51,.15)),
+          url("img/duo-concert-1600.jpg") center bottom / 100% auto no-repeat,
+          #071b33;
+        padding:60px 0 71.5%;
+        min-height:auto;
       }
-
-      .album-grid{grid-template-columns:1fr}
-     .hero{
-  padding:60px 0 50px;
-  min-height:auto;
-}
-.hero{
-  background:
-    linear-gradient(180deg,rgba(7,27,51,.35),rgba(7,27,51,.15)),
-    url("photo%20du%20duo%20en%20concert%20-%20Copie.jpg") center bottom / 100% auto no-repeat,
-    #071b33;
-  padding-bottom:260px;
-}
-.hero-inner{
-  padding-right:0;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:30px;
-  max-width:100%;
-}
-
-.duo-name-line{
-  white-space:normal;
-}
-
-.tagline{
-  max-width:100%;
-  font-size:12px;
-  line-height:1.4;
-  white-space:normal;
-}
-
-.sub{
-  max-width:100%;
-  font-size:13px;
-  line-height:1.4;
-}
-
-.hero-buttons{
-  justify-content:center;
-}
+      .hero{position:relative}
+      .hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(180deg,rgba(7,27,51,0),rgba(7,27,51,.78));pointer-events:none}
+      .hero-inner{padding-right:0;padding-bottom:26px;text-align:center}
+      .hero h1{font-size:clamp(26px,5vw,34px);max-width:100%;margin:0 auto}
+      .duo-name-line{white-space:normal}
+      .tagline{max-width:100%;font-size:13px;line-height:1.4;margin-left:auto;margin-right:auto}
+      .sub{max-width:100%;font-size:15px;line-height:1.5;margin-left:auto;margin-right:auto}
+      /* Boutons en superposition, centrés en bas de la photo */
+      .hero-buttons{position:absolute;left:20px;right:20px;bottom:26px;margin:0;justify-content:center;z-index:1}
+      .hero-buttons .btn-outline{background:rgba(7,27,51,.55);border-color:rgba(255,255,255,.7);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+    }
+    @media (max-width:560px){
+      .hero{background-image:linear-gradient(180deg,rgba(7,27,51,.35),rgba(7,27,51,.15)),url("img/duo-concert-960.jpg")}
       .brand span:last-child{font-size:14px}
+    }
+    /* Petits téléphones : nom du Duo sur deux lignes, bouton Contact compact, icône de menu toujours visible */
+    @media (max-width:480px){
+      .nav{gap:10px}
+      .brand{gap:10px}
+      .brand span:last-child{font-size:13px;line-height:1.15;white-space:normal;max-width:118px}
+      .navcta{padding:7px 11px;font-size:11px}
+      .menu-toggle{width:42px;height:42px}
       .album-modal{padding:10px}
       .modal-panel{max-height:94vh;border-radius:16px}
       .modal-inner{padding:24px 20px 30px}
@@ -368,95 +370,84 @@
   </style>
 </head>
 <body>
+<a class="skip-link" href="#duo">Aller au contenu</a>
+
 <header class="topbar">
   <div class="wrap nav">
-    <a class="brand" href="#accueil"><span class="monogram">DN</span><span>Duo Di Mosole–Neuhauser</span></a>
-    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu">☰ Menu</button>
-    <nav class="navlinks">
+    <a class="brand" href="#accueil"><img class="monogram" src="img/logo-duo-96.jpg" width="44" height="44" alt=""><span>Duo Di Mosole–Neuhauser</span></a>
+    <nav class="navlinks" id="menu-principal" aria-label="Menu principal">
       <a href="#duo">Le Duo</a>
       <a href="#programme">Programme</a>
-      <a href="#distinctions">Distinctions</a>
       <a href="#concerts">Concerts</a>
+      <a href="#distinctions">Distinctions</a>
       <a href="#discographie">Discographie</a>
       <a href="#ecouter">Écouter</a>
-      <a class="navcta" href="#contact">Contact</a>
+      <a href="#programmateurs">Programmateurs</a>
     </nav>
+    <a class="navcta" href="#contact" data-modal="modal-contact">Contact</a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </div>
 </header>
 
 <main>
 <section class="hero" id="accueil">
-  <div class="wrap hero-inner">
-    <div class="eyebrow">Duo de guitares classiques</div>
-   <h1>
-  <span class="duo-name-line">Serge Di Mosole&nbsp; · &nbsp;Christophe Neuhauser
-</h1>
-    <div class="tagline">1 style • 2 guitares • 4 siècles de musique</div>
+  <div class="hero-inner">
+    <p class="eyebrow">Duo de guitares classiques</p>
+    <h1><span class="duo-name-line">Serge Di Mosole&nbsp; · &nbsp;Christophe Neuhauser</span></h1>
+    <p class="tagline">1 style • 2 guitares • 4 siècles de musique</p>
     <p class="sub">Deux guitares en dialogue pour un voyage musical à travers les siècles, entre élégance classique, passion espagnole et couleurs sud-américaines.</p>
     <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://soundcloud.com/duo-di-mosole-neuhauser" target="_blank" rel="noopener">Écouter le Duo</a>
-      <a class="btn btn-outline" href="#contact">Inviter le Duo</a>
+      <a class="btn btn-primary" href="#contact">Inviter le Duo</a>
+      <a class="btn btn-outline" href="#ecouter">Écouter &amp; voir</a>
     </div>
   </div>
 </section>
 
-<section class="concerts" id="concerts">
-  <div class="quick-links">
+<nav class="quick-links" aria-label="Accès rapides">
   <a href="#ecouter" class="quick-link">
-    <div class="quick-icon">♪</div>
+    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
     <div class="quick-title">ÉCOUTER</div>
-    <div class="quick-text">Nos enregistrements<br>sur SoundCloud →</div>
+    <div class="quick-text">Vidéos et enregistrements →</div>
   </a>
-
   <a href="concerts.html" class="quick-link">
-    <div class="quick-icon">▣</div>
+    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
     <div class="quick-title">CONCERTS</div>
-    <div class="quick-text">Nos prochaines dates →</div>
+    <div class="quick-text">Dates et archives de scène →</div>
   </a>
-
   <a href="presse.html" class="quick-link">
-    <div class="quick-icon">▤</div>
+    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10M7 16h10"/></svg>
     <div class="quick-title">PRESSE</div>
     <div class="quick-text">Articles et critiques →</div>
   </a>
-
   <a href="#contact" class="quick-link">
-    <div class="quick-icon">✉</div>
+    <svg class="quick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
     <div class="quick-title">CONTACT</div>
     <div class="quick-text">Nous écrire →</div>
   </a>
-</div>
-  <div class="wrap">
-    <div class="section-kicker">Concerts & actualités</div>
-    <h2>Prochaines dates en préparation</h2>
-
-    <p class="lead">
-      Le Duo Di Mosole–Neuhauser prépare actuellement ses prochaines dates de concert.
-    </p>
-
-    <p>
-      Programmateurs, festivals, associations et lieux culturels peuvent nous contacter
-      pour connaître nos disponibilités.
-    </p>
-
-    <div style="margin-top:24px;">
-      <a class="btn" href="#contact">Nous contacter</a>
-      <a class="btn" href="concerts.html" style="margin-left:10px;">Voir les concerts passés</a>
-    </div>
-  </div>
-</section>
+</nav>
 
 <section id="duo">
   <div class="wrap">
-    <div class="section-kicker">Le Duo</div>
+    <p class="section-kicker">Le Duo</p>
     <h2>Deux parcours, une identité musicale</h2>
     <p class="lead">Serge Di Mosole et Christophe Neuhauser réunissent leurs expériences de guitaristes classiques dans un programme conçu pour le concert, les festivals, les lieux patrimoniaux et les tournées.</p>
     <p>Leur répertoire traverse plusieurs siècles et rapproche les grandes pages de la tradition classique, l’Espagne et l’Amérique latine. Le duo accorde également une place à la création, aux compositions originales et aux arrangements.</p>
-    <p>Cette formule intimiste permet une grande proximité avec le public tout en conservant une vraie richesse de couleurs, de dynamiques et de contrastes.</p>
-    <table class="duo-table" role="presentation"><tr>
-      <td><h3>Serge Di Mosole</h3><div class="role">Guitare • Composition</div><p>Premier Prix de musique de chambre et Médaille d’Or de guitare au CNR de Toulouse. Il perfectionne son art auprès du maître cubain Manuel Barrueco, dont il obtient le Diplôme international d’interprétation.</p></td>
-      <td><h3>Christophe Neuhauser</h3><div class="role">Guitare • Arrangements</div><p>Premier Prix de guitare du CNSM de Paris dans la classe du maître Alexandre Lagoya. Il perfectionne son art auprès de deux grandes figures internationales de la guitare, Alirio Diaz et Léo Brouwer.</p></td>
-    </tr></table>
+    <p>Réunis depuis plus de vingt-cinq ans, les deux musiciens développent un jeu fondé sur l’équilibre des timbres, le dialogue et une conception orchestrale de la guitare en duo. Cette formule intimiste permet une grande proximité avec le public tout en conservant une vraie richesse de couleurs, de dynamiques et de contrastes.</p>
+    <div class="duo-grid">
+      <article class="duo-card">
+        <h3>Serge Di Mosole</h3>
+        <p class="role">Guitare • Composition</p>
+        <p>Premier Prix de musique de chambre et Médaille d’Or de guitare au CNR de Toulouse. Il perfectionne son art auprès du maître cubain Manuel Barrueco, dont il obtient le Diplôme international d’interprétation. Ses compositions et arrangements sont publiés par Les Éditions Soldano, Les Productions d’OZ et IMD.</p>
+      </article>
+      <article class="duo-card">
+        <h3>Christophe Neuhauser</h3>
+        <p class="role">Guitare • Arrangements</p>
+        <p>Premier Prix de guitare du CNSM de Paris dans la classe du maître Alexandre Lagoya. Il perfectionne son art auprès de deux grandes figures internationales de la guitare, Alirio Diaz et Léo Brouwer.</p>
+      </article>
+    </div>
     <div class="duo-quote">« Passion, virtuosité et complicité au service de la guitare. »</div>
     <p class="formats"><strong>Formats :</strong> concerts, festivals, salons de musique, événements patrimoniaux et tournées.</p>
   </div>
@@ -464,9 +455,9 @@
 
 <section class="program" id="programme">
   <div class="wrap">
-    <div class="section-kicker">Programme</div>
+    <p class="section-kicker">Programme</p>
     <h2>Un voyage musical à travers 4 siècles</h2>
-    <p class="lead">Un programme modulable, pensé pour s’adapter à l’acoustique et à l’identité de chaque lieu.</p>
+    <p class="lead">Un programme modulable d’environ 70 minutes, pensé pour s’adapter à l’acoustique et à l’identité de chaque lieu.</p>
     <div class="cards">
       <article class="card"><h3>Classique</h3><p>De Haendel, Bach, Scarlatti, Soler et Sor aux grandes pages du répertoire pour guitare et musique de chambre.</p></article>
       <article class="card"><h3>Espagnol</h3><p>Granados, De Falla et l’élégance d’une écriture intimement liée aux couleurs de la guitare.</p></article>
@@ -475,73 +466,120 @@
   </div>
 </section>
 
+<section class="concerts" id="concerts">
+  <div class="wrap">
+    <p class="section-kicker">Concerts &amp; actualités</p>
+    <h2>Sur scène</h2>
+    <p class="lead">Le Duo prépare actuellement ses prochaines dates. Programmateurs, festivals, associations et lieux culturels peuvent nous contacter pour connaître nos disponibilités.</p>
+    <div class="concert-feature">
+      <div class="concert-poster">
+        <img src="img/concert-font-romeu-2026-1000.jpg" width="706" height="1000" loading="lazy" alt="Affiche du concert du Duo Di Mosole–Neuhauser à Font-Romeu, le 25 août 2026">
+      </div>
+      <div class="concert-info">
+        <p class="concert-date">Dernier concert • 25 août 2026</p>
+        <h3>Chapelle de l’Ermitage, Font-Romeu</h3>
+        <p>Un récital pour deux guitares dans un cadre patrimonial, autour du répertoire classique, espagnol et sud-américain : Haendel, Sor, Granados, De Falla, Piazzolla, Bellinati, Gnattali.</p>
+        <p class="concert-note">Retrouvez les affiches, articles et lieux qui ont jalonné le parcours du Duo dans les archives de scène.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Nous contacter</a>
+          <a class="btn btn-outline" href="concerts.html">Voir les archives de concerts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="distinctions">
   <div class="wrap">
-    <div class="section-kicker">Repères artistiques</div>
-    <h2>Distinctions & rayonnement</h2>
+    <p class="section-kicker">Repères artistiques</p>
+    <h2>Distinctions &amp; rayonnement</h2>
     <p class="lead">Quelques repères récents du parcours artistique du Duo.</p>
     <div class="awards">
       <div class="award"><strong>Premier Prix de composition — Opus Artis Paris 2025</strong><span>Distinction internationale en composition.</span></div>
       <div class="award"><strong>Gold Award de composition — Fenix Award 2025</strong><span>Compétition internationale, catégorie composition.</span></div>
       <div class="award"><strong>Premier Prix avec mention spéciale — Concours international Bach 2025</strong><span>Musique de chambre.</span></div>
-      <div class="award">
+      <div class="award"><strong>Publications &amp; éditions</strong><span>Les compositions et arrangements sont publiés notamment par <strong>Les Éditions Soldano (France), Les Productions d’OZ (Canada) et IMD</strong>, avec une diffusion internationale.</span></div>
+      <div class="award award-wide">
         <strong>The Intimate Guitar — Dayton, Ohio</strong>
         <span>Présentation du Duo Di Mosole–Neuhauser dans l’émission américaine <em>The Intimate Guitar</em> de Jim McCutcheon, consacrée à la guitare classique.</span>
-        <div style="margin-top:20px;"><iframe width="100%" height="400" src="https://www.youtube.com/embed/ca9Bo_kIJ20" title="Duo Di Mosole–Neuhauser — The Intimate Guitar — Jim McCutcheon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="video-embed">
+          <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/ca9Bo_kIJ20" title="Duo Di Mosole–Neuhauser — The Intimate Guitar — Jim McCutcheon" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
       </div>
-      <div class="award"><strong>Publications & éditions</strong><span>Les compositions et arrangements sont publiés notamment par <strong>Les Éditions Soldano (France), Les Productions d’OZ (Canada) et IMD</strong>, avec une diffusion internationale.</span></div>
     </div>
   </div>
 </section>
 
 <section id="presse">
   <div class="wrap">
-    <div class="section-kicker">Presse & médias</div>
-    <h2>Musicoguia Magazine — Espagne</h2>
-    <p class="lead">« La guitare classique pour le Duo Di Mosole–Neuhauser »</p>
-    <div class="award">
-      <strong>Interview du Duo Di Mosole–Neuhauser</strong>
-      <span>Une interview consacrée au parcours, aux influences et à l’identité musicale de Serge Di Mosole et Christophe Neuhauser.</span>
-      <p style="margin-top:20px;"><a class="btn btn-primary" href="https://www.musicoguia.com/la-guitare-classique-pour-le-duo-di-mosole-neuhauser/" target="_blank" rel="noopener">Lire l’interview</a></p>
-      <p style="margin-top:14px;"><a class="btn" href="presse.html">Voir la revue de presse complète</a></p>
+    <p class="section-kicker">Presse &amp; médias</p>
+    <h2>Ce qu’en dit la presse</h2>
+    <p class="lead">Extraits de critiques françaises et internationales consacrées au Duo et à ses enregistrements.</p>
+    <div class="quotes">
+      <article class="quote-card">
+        <blockquote>« Une sonorité incisive […] et une variété de timbres très marquée. »</blockquote>
+        <cite>François Nicolas, Guitare Classique</cite>
+        <small>À propos de l’album <em>De Bach à Piazzolla</em></small>
+      </article>
+      <article class="quote-card">
+        <blockquote>« Serge Di Mosole nous confirme bel et bien sa place parmi les compositeurs guitaristes majeurs de notre temps. »</blockquote>
+        <cite>Pascal Proust, Guitare Classique</cite>
+        <small>À propos de l’album <em>Opus II</em></small>
+      </article>
+      <article class="quote-card">
+        <blockquote lang="en">« Di Mosole’s music is always very warm, lovely harmonies and melodies. »</blockquote>
+        <cite>Chris Dumigan, All Classical Guitar</cite>
+        <small>Royaume-Uni, à propos de l’album <em>Opus II</em></small>
+      </article>
+    </div>
+    <div class="press-feature">
+      <div>
+        <strong>Interview du Duo — Musicoguia Magazine (Espagne)</strong>
+        <span>« La guitare classique pour le Duo Di Mosole–Neuhauser » : parcours, influences et identité musicale.</span>
+      </div>
+      <div class="actions" style="margin-top:0">
+        <a class="btn btn-primary" href="https://www.musicoguia.com/la-guitare-classique-pour-le-duo-di-mosole-neuhauser/" target="_blank" rel="noopener">Lire l’interview</a>
+        <a class="btn btn-navy" href="presse.html">Revue de presse complète</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="discography" id="discographie">
   <div class="wrap">
-    <div class="section-kicker">Discographie</div>
+    <p class="section-kicker">Discographie</p>
     <h2>Enregistrements</h2>
     <p class="lead">Une sélection d’enregistrements qui témoigne des parcours de Serge Di Mosole et Christophe Neuhauser, ainsi que de leur travail commun.</p>
     <p><strong>Cliquez sur une jaquette</strong> pour découvrir les morceaux et accéder aux plateformes d’écoute disponibles.</p>
+    <span class="album-scroll-hint" aria-hidden="true">Faites défiler les pochettes →</span>
     <div class="album-grid">
       <article class="album">
         <button type="button" data-modal="modal-opus" aria-label="Voir les morceaux de l'album Opus II">
-          <img src="opus-ii.jpg" alt="Pochette Opus II — Serge Di Mosole">
+          <img src="img/opus-ii-480.jpg" width="480" height="430" loading="lazy" alt="Pochette Opus II — Serge Di Mosole">
           <h3>Opus II</h3><p>Serge Di Mosole</p><span class="album-hint">Voir les morceaux</span>
         </button>
       </article>
       <article class="album">
         <button type="button" data-modal="modal-sud" aria-label="Voir les morceaux de Guitare classique Sud-Américaine">
-          <img src="guitare-sud-americaine.jpg" alt="Pochette Guitare classique Sud-Américaine — Serge Di Mosole">
+          <img src="img/guitare-sud-americaine-480.jpg" width="478" height="480" loading="lazy" alt="Pochette Guitare classique Sud-Américaine — Serge Di Mosole">
           <h3>Guitare classique Sud-Américaine</h3><p>Serge Di Mosole</p><span class="album-hint">Voir les morceaux</span>
         </button>
       </article>
       <article class="album duo-album">
         <button type="button" data-modal="modal-duo" aria-label="Voir les morceaux de l'album Classique">
-          <img src="classique-duo.jpg" alt="Pochette Classique — Serge Di Mosole et Christophe Neuhauser">
+          <img src="img/classique-duo-480.jpg" width="444" height="480" loading="lazy" alt="Pochette Classique — Serge Di Mosole et Christophe Neuhauser">
           <h3>Classique</h3><p>Serge Di Mosole • Christophe Neuhauser</p><span class="album-hint">Voir les morceaux</span>
         </button>
       </article>
       <article class="album">
         <button type="button" data-modal="modal-santafe" aria-label="Voir les morceaux de l'album Santa Fe">
-          <img src="santa-fe.jpg" alt="Pochette Santa Fe — Serge Di Mosole">
+          <img src="img/santa-fe-480.jpg" width="474" height="480" loading="lazy" alt="Pochette Santa Fe — Serge Di Mosole">
           <h3>Santa Fe</h3><p>Serge Di Mosole</p><span class="album-hint">Voir les morceaux</span>
         </button>
       </article>
       <article class="album">
         <button type="button" data-modal="modal-christophe" aria-label="Voir les morceaux de Musique Hispano-Américaine">
-          <img src="musique-hispano-americaine.jpg" alt="Pochette Musique Hispano-Américaine — Christophe Neuhauser">
+          <img src="img/musique-hispano-americaine-480.jpg" width="461" height="480" loading="lazy" alt="Pochette Musique Hispano-Américaine — Christophe Neuhauser">
           <h3>Musique Hispano-Américaine</h3><p>Christophe Neuhauser</p><span class="album-hint">Voir les morceaux</span>
         </button>
       </article>
@@ -549,13 +587,211 @@
   </div>
 </section>
 
+<section id="partenaire">
+  <div class="wrap" style="text-align:center;">
+    <p class="section-kicker">Partenaire</p>
+    <h2>RC Strings — Valencia, Espagne</h2>
+    <p style="margin:30px auto;"><a href="https://rcstrings.com/" target="_blank" rel="noopener"><img src="img/rc-strings.jpg" width="150" height="150" loading="lazy" alt="RC Strings, artistes partenaires" style="border-radius:8px;"></a></p>
+    <p class="lead" style="margin-left:auto;margin-right:auto;">Le Duo Di Mosole–Neuhauser est soutenu par <strong>RC Strings</strong>, fabricant espagnol de cordes pour guitare classique.</p>
+    <p style="margin-top:25px;"><a class="btn btn-primary" href="https://rcstrings.com/" target="_blank" rel="noopener">Découvrir RC Strings</a></p>
+  </div>
+</section>
+
+<section class="media" id="ecouter">
+  <div class="wrap">
+    <p class="section-kicker">Écouter &amp; voir</p>
+    <h2>Le Duo en vidéo</h2>
+    <p class="lead">Une sélection de vidéos du Duo Di Mosole–Neuhauser. Cliquez sur une vignette pour lancer la lecture ici même, ou ouvrez la vidéo sur YouTube.</p>
+
+    <div class="video-grid">
+      <article class="extrait" data-video="6zrmFrKiork">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : J. S. Bach, Suite anglaise, Allegro">
+            <img src="img/vignettes/6zrmFrKiork.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>J. S. Bach — Suite anglaise, Allegro</h3>
+          <p>Duo Di Mosole–Neuhauser</p>
+          <a href="https://youtu.be/6zrmFrKiork" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : J. S. Bach, Suite anglaise, Allegro">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="KWxyMqSo4uU">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : G. F. Haendel, Fugue, concert live à Saint-Orens">
+            <img src="img/vignettes/KWxyMqSo4uU.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>G. F. Haendel — Fugue</h3>
+          <p>Concert live à Saint-Orens</p>
+          <a href="https://youtu.be/KWxyMqSo4uU" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : G. F. Haendel, Fugue, concert live à Saint-Orens">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="Tfqzyn7mYNU">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : Valse hommage à Antonio Lauro">
+            <img src="img/vignettes/Tfqzyn7mYNU.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>Valse hommage à Antonio Lauro</h3>
+          <p>Christophe Neuhauser</p>
+          <a href="https://youtu.be/Tfqzyn7mYNU" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : Valse hommage à Antonio Lauro">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="PGnlpjwu8Z8">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : Qui a tué grand-maman ?, Michel Polnareff">
+            <img src="img/vignettes/PGnlpjwu8Z8.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>Qui a tué grand-maman ? — Michel Polnareff</h3>
+          <p>Arrangement : Christophe Neuhauser</p>
+          <a href="https://youtu.be/PGnlpjwu8Z8" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : Qui a tué grand-maman ?, Michel Polnareff">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="FnGfy1xzTmI">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : Le Duo en concert">
+            <img src="img/vignettes/FnGfy1xzTmI.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>Le Duo en concert</h3>
+          <p>Duo Di Mosole–Neuhauser</p>
+          <a href="https://youtu.be/FnGfy1xzTmI" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : Le Duo en concert">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="v-ePVoxDNEw">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : Deux guitares en dialogue">
+            <img src="img/vignettes/v-ePVoxDNEw.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>Deux guitares en dialogue</h3>
+          <p>Serge Di Mosole et Christophe Neuhauser</p>
+          <a href="https://youtu.be/v-ePVoxDNEw" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : Deux guitares en dialogue">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+      <article class="extrait" data-video="Y2QvweKR4JQ" data-start="15">
+        <div class="extrait-visuel">
+          <button type="button" class="extrait-lecture" aria-label="Lire la vidéo : Répétition à la maison">
+            <img src="img/vignettes/Y2QvweKR4JQ.jpg" width="640" height="360" alt="">
+            <span class="extrait-bouton" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="extrait-texte">
+          <h3>Répétition à la maison</h3>
+          <p>Duo Di Mosole–Neuhauser — démarrage à 0:15</p>
+          <a href="https://youtu.be/Y2QvweKR4JQ?t=15" target="_blank" rel="noopener" aria-label="Ouvrir sur YouTube : Répétition à la maison">Ouvrir sur YouTube ↗</a>
+        </div>
+      </article>
+
+      <article class="extrait soundcloud">
+        <h3>SoundCloud</h3>
+        <p>Écoutez une sélection d’enregistrements du Duo Di Mosole–Neuhauser.</p>
+        <p><a class="btn btn-primary" href="https://soundcloud.com/duo-di-mosole-neuhauser" target="_blank" rel="noopener">Écouter le Duo sur SoundCloud</a></p>
+        <p style="margin:0"><a class="btn btn-outline" href="https://www.youtube.com/@dimosoleneuhauser" target="_blank" rel="noopener">Chaîne YouTube</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pro" id="programmateurs">
+  <div class="wrap">
+    <p class="section-kicker">Pour les organisateurs</p>
+    <h2>Programmer le Duo</h2>
+    <p class="lead">L’essentiel pour préparer un concert du Duo Di Mosole–Neuhauser : format, conditions de présentation et documents à télécharger.</p>
+    <div class="pro-grid">
+      <article class="pro-card">
+        <h3>Le concert</h3>
+        <ul>
+          <li>Durée : environ 70 minutes, adaptable au format du lieu</li>
+          <li>Tous publics, mélomanes avertis ou non</li>
+          <li>Programme modulable : classique, espagnol, sud-américain, créations</li>
+          <li>De courtes présentations orales peuvent introduire les œuvres</li>
+          <li>Concerts, festivals, salons de musique, lieux patrimoniaux, tournées</li>
+        </ul>
+      </article>
+      <article class="pro-card">
+        <h3>Fiche technique</h3>
+        <ul>
+          <li>Plateau : espace calme pour deux guitaristes assis</li>
+          <li>Deux chaises stables, sans accoudoirs</li>
+          <li>Guitares apportées par les artistes</li>
+          <li>Sonorisation à évaluer selon la jauge et l’acoustique, format acoustique privilégié</li>
+          <li>Éclairage de concert simple et homogène</li>
+          <li>Installation à convenir avec le diffuseur</li>
+        </ul>
+      </article>
+      <article class="pro-card">
+        <h3>Documents</h3>
+        <ul class="doc-list">
+          <li><a href="docs/dossier-artistique-4-siecles-de-musique.pdf" download>Dossier artistique — 4 siècles de musique <small>PDF · 0,7 Mo</small></a></li>
+          <li><a href="docs/dossier-artistique-espagne-amerique-latine.pdf" download>Dossier artistique — De l’Espagne à l’Amérique latine <small>PDF · 0,7 Mo</small></a></li>
+          <li><a href="img/presse/duo-di-mosole-neuhauser-concert-hd.jpg" download>Photo de concert haute définition <small>JPG · 3 Mo</small></a></li>
+          <li><a href="img/logo-duo-512.jpg" download>Logo du Duo <small>JPG · 512 px</small></a></li>
+        </ul>
+      </article>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="#contact">Demander une disponibilité</a>
+      <a class="btn btn-navy" href="presse.html">Lire la revue de presse</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="section-kicker">Programmation &amp; concerts</p>
+      <h2>Inviter le Duo</h2>
+      <p class="lead" style="color:#dce8f3">Pour une programmation, un festival, un salon de musique, une tournée ou un événement patrimonial, contactez-nous directement.</p>
+      <div class="contact-list">
+        <a href="tel:+33673793785">Tél. : 06 73 79 37 85</a>
+        <a href="mailto:duodimosoleneuhauser@gmail.com">duodimosoleneuhauser@gmail.com</a>
+        <a href="https://soundcloud.com/duo-di-mosole-neuhauser" target="_blank" rel="noopener">SoundCloud</a>
+        <a href="https://www.youtube.com/@dimosoleneuhauser" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <img src="img/logo-duo-512.jpg" width="140" height="140" loading="lazy" alt="Logo du Duo Di Mosole–Neuhauser">
+      <h3>Duo Di Mosole–Neuhauser</h3>
+      <p><strong>Serge Di Mosole</strong>&nbsp;•&nbsp;<strong>Christophe Neuhauser</strong></p>
+      <p><strong>Serge Di Mosole :</strong> Guitare • Composition<br><strong>Christophe Neuhauser :</strong> Guitare • Arrangements</p>
+      <p style="margin-bottom:0">France • Concerts • Festivals • Salons • Tournées</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Duo Di Mosole–Neuhauser • 1 style • 2 guitares • 4 siècles de musique</span>
+    <nav aria-label="Liens de bas de page">
+      <a href="concerts.html">Concerts</a>
+      <a href="presse.html">Presse</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+  </div>
+</footer>
+
 <!-- MODAL OPUS II -->
 <div class="album-modal" id="modal-opus" role="dialog" aria-modal="true" aria-labelledby="title-opus">
   <div class="modal-panel">
     <button class="modal-close" type="button" aria-label="Fermer">×</button>
     <div class="modal-inner">
       <div class="modal-head">
-        <img class="modal-cover" src="opus-ii.jpg" alt="Pochette Opus II">
+        <img class="modal-cover" src="img/opus-ii-480.jpg" width="480" height="430" alt="Pochette Opus II">
         <div><div class="modal-kicker">Discographie</div><h3 class="modal-title" id="title-opus">Opus II</h3><p class="modal-artist">Serge Di Mosole — guitare</p></div>
       </div>
       <div class="modal-rule"></div>
@@ -593,7 +829,7 @@
     <button class="modal-close" type="button" aria-label="Fermer">×</button>
     <div class="modal-inner">
       <div class="modal-head">
-        <img class="modal-cover" src="guitare-sud-americaine.jpg" alt="Pochette Guitare classique Sud-Américaine">
+        <img class="modal-cover" src="img/guitare-sud-americaine-480.jpg" width="478" height="480" alt="Pochette Guitare classique Sud-Américaine">
         <div><div class="modal-kicker">Discographie</div><h3 class="modal-title" id="title-sud">Guitare classique Sud-Américaine</h3><p class="modal-artist">Serge Di Mosole — guitare</p></div>
       </div>
       <div class="modal-rule"></div>
@@ -632,8 +868,8 @@
     <button class="modal-close" type="button" aria-label="Fermer">×</button>
     <div class="modal-inner">
       <div class="modal-head">
-        <img class="modal-cover" src="classique-duo.jpg" alt="Pochette Classique">
-        <div><div class="modal-kicker">Discographie</div><h3 class="modal-title" id="title-duo">Classique — De Bach à Piazzolla</h3><p class="modal-artist">Serge Di Mosole & Christophe Neuhauser — guitares</p></div>
+        <img class="modal-cover" src="img/classique-duo-480.jpg" width="444" height="480" alt="Pochette Classique">
+        <div><div class="modal-kicker">Discographie</div><h3 class="modal-title" id="title-duo">Classique — De Bach à Piazzolla</h3><p class="modal-artist">Serge Di Mosole &amp; Christophe Neuhauser — guitares</p></div>
       </div>
       <div class="modal-rule"></div>
       <div class="track-groups"><div class="track-group"><h4>Programme</h4><ol>
@@ -664,7 +900,7 @@
     <button class="modal-close" type="button" aria-label="Fermer">×</button>
     <div class="modal-inner">
       <div class="modal-head">
-        <img class="modal-cover" src="santa-fe.jpg" alt="Pochette Santa Fe">
+        <img class="modal-cover" src="img/santa-fe-480.jpg" width="474" height="480" alt="Pochette Santa Fe">
         <div><div class="modal-kicker">Double album — 60 compositions</div><h3 class="modal-title" id="title-santafe">Santa Fe</h3><p class="modal-artist">Serge Di Mosole — guitare</p></div>
       </div>
       <div class="modal-rule"></div>
@@ -741,7 +977,7 @@
     <button class="modal-close" type="button" aria-label="Fermer">×</button>
     <div class="modal-inner">
       <div class="modal-head">
-        <img class="modal-cover" src="musique-hispano-americaine.jpg" alt="Pochette Musique Hispano-Américaine">
+        <img class="modal-cover" src="img/musique-hispano-americaine-480.jpg" width="461" height="480" alt="Pochette Musique Hispano-Américaine">
         <div><div class="modal-kicker">Discographie</div><h3 class="modal-title" id="title-christophe">Musique Hispano-Américaine</h3><p class="modal-artist">Christophe Neuhauser — guitare</p></div>
       </div>
       <div class="modal-rule"></div>
@@ -761,121 +997,48 @@
         <li><strong>Recuerdos de la Alhambra</strong> — Francisco Tárrega</li>
         <li><strong>Capricho Árabe</strong> — Francisco Tárrega</li>
         <li><strong>En los trigales</strong> — Joaquín Rodrigo</li>
-      <li><strong>La Foule</strong> — Ángel Cabral</li>
-      </ol>
-
-      <div class="streaming">
-        <p class="streaming-title">Écouter l’album</p>
-        <div class="streaming-links">
-          <a href="https://open.spotify.com/intl-fr/album/74eki0UkWyktf09Yy8FA8J" target="_blank" rel="noopener">Spotify</a>
-          <a href="https://www.deezer.com/fr/album/282892712" target="_blank" rel="noopener">Deezer</a>
-          <a href="https://music.apple.com/fr/album/christophe-neuhauser-guitare/1602259657" target="_blank" rel="noopener">Apple Music</a>
-        </div>
-      </div>
-
+        <li><strong>La Foule</strong> — Ángel Cabral</li>
+      </ol></div></div>
+      <div class="streaming"><p class="streaming-title">Écouter l’album</p><div class="streaming-links">
+        <a href="https://open.spotify.com/intl-fr/album/74eki0UkWyktf09Yy8FA8J" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://www.deezer.com/fr/album/282892712" target="_blank" rel="noopener">Deezer</a>
+        <a href="https://music.apple.com/fr/album/christophe-neuhauser-guitare/1602259657" target="_blank" rel="noopener">Apple Music</a>
       </div></div>
     </div>
   </div>
 </div>
 
-<section id="partenaire">
-  <div class="wrap" style="text-align:center;">
-    <div class="section-kicker">Partenaire</div>
-    <h2>RC Strings — Valencia, Espagne</h2>
-    <div style="margin:30px auto;"><a href="https://rcstrings.com/" target="_blank" rel="noopener"><img src="RC%20strings%20web%20Artistas%20borde_reducido.jpg" alt="RC Strings - Artistas Artists" style="width:150px;max-width:100%;height:auto;border-radius:8px;"></a></div>
-    <p class="lead" style="margin-left:auto;margin-right:auto;">Le Duo Di Mosole–Neuhauser est soutenu par <strong>RC Strings</strong>, fabricant espagnol de cordes pour guitare classique.</p>
-    <p style="margin-top:25px;"><a class="btn btn-primary" href="https://rcstrings.com/" target="_blank" rel="noopener">Découvrir RC Strings</a></p>
-  </div>
-</section>
-
-<section class="media" id="ecouter">
-  <div class="wrap">
-    <div class="section-kicker">Écouter & voir</div>
-    <h2>Le Duo en vidéo</h2>
-    <p class="lead">Une sélection de vidéos du Duo Di Mosole–Neuhauser. Chaque bouton ouvre uniquement la vidéo choisie sur YouTube.</p>
-
-    <div class="media-grid">
-      <article class="media-box">
-        <h3>J. S. Bach — Suite anglaise, Allegro</h3>
-        <p>Duo Di Mosole–Neuhauser</p>
-        <a class="btn btn-primary" href="https://youtu.be/6zrmFrKiork" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>G. F. Haendel — Fugue</h3>
-        <p>Concert live à Saint-Orens</p>
-        <a class="btn btn-primary" href="https://youtu.be/KWxyMqSo4uU" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>Valse hommage à Antonio Lauro</h3>
-        <p>Christophe Neuhauser</p>
-        <a class="btn btn-primary" href="https://youtu.be/Tfqzyn7mYNU" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>Qui a tué grand-maman ? — Michel Polnareff</h3>
-        <p>Arrangement : Christophe Neuhauser</p>
-        <a class="btn btn-primary" href="https://youtu.be/PGnlpjwu8Z8" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>Duo Di Mosole–Neuhauser</h3>
-        <p>Vidéo du Duo</p>
-        <a class="btn btn-primary" href="https://youtu.be/FnGfy1xzTmI" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>Duo Di Mosole–Neuhauser</h3>
-        <p>Vidéo du Duo</p>
-        <a class="btn btn-primary" href="https://youtu.be/v-ePVoxDNEw" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>Répétition à la maison</h3>
-        <p>Duo Di Mosole–Neuhauser — démarrage à 0:15</p>
-        <a class="btn btn-primary" href="https://youtu.be/Y2QvweKR4JQ?t=15" target="_blank" rel="noopener">▶ Voir la vidéo</a>
-      </article>
-
-      <article class="media-box">
-        <h3>SoundCloud</h3>
-        <p>Écoutez une sélection d’enregistrements du Duo Di Mosole–Neuhauser.</p>
-        <a class="btn btn-primary" href="https://soundcloud.com/duo-di-mosole-neuhauser" target="_blank" rel="noopener">Écouter le Duo</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="section-kicker">Programmation & concerts</div>
-      <h2>Inviter le Duo</h2>
-      <p class="lead" style="color:#dce8f3">Pour une programmation, un festival, un salon de musique, une tournée ou un événement patrimonial, contactez-nous directement.</p>
-      <div class="contact-list">
+<!-- MODAL CONTACT -->
+<div class="album-modal" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="title-contact">
+  <div class="modal-panel modal-contact">
+    <button class="modal-close" type="button" aria-label="Fermer">×</button>
+    <div class="modal-inner">
+      <div class="modal-kicker">Programmation &amp; concerts</div>
+      <h3 class="modal-title" id="title-contact">Inviter le Duo</h3>
+      <p class="modal-lead">Pour une programmation, un festival, un salon de musique, une tournée ou un événement patrimonial, contactez-nous directement.</p>
+      <div class="modal-contact-list">
         <a href="tel:+33673793785">Tél. : 06 73 79 37 85</a>
         <a href="mailto:duodimosoleneuhauser@gmail.com">duodimosoleneuhauser@gmail.com</a>
         <a href="https://soundcloud.com/duo-di-mosole-neuhauser" target="_blank" rel="noopener">SoundCloud</a>
-        <a href="#ecouter">Vidéos</a>
+        <a href="https://www.youtube.com/@dimosoleneuhauser" target="_blank" rel="noopener">YouTube</a>
+      </div>
+      <div class="modal-contact-actions">
+        <a class="btn btn-primary" href="#programmateurs" data-close>Espace programmateurs</a>
       </div>
     </div>
-    <div class="contact-card">
-      <h3 style="color:var(--gold2);font-size:28px;margin-top:0">Duo Di Mosole–Neuhauser</h3>
-      <p><span class="duo-names"><strong>Serge Di Mosole</strong>&nbsp;•&nbsp;<strong>Christophe Neuhauser</strong></span></p>
-      <p><strong>Serge Di Mosole :</strong> Guitare • Composition<br><strong>Christophe Neuhauser :</strong> Guitare • Arrangements</p>
-      <p style="margin-bottom:0">France • Concerts • Festivals • Salons • Tournées</p>
-    </div>
   </div>
-</section>
-</main>
-
-<footer><div class="wrap"><span>© 2026 Duo Di Mosole–Neuhauser</span><span>1 style • 2 guitares • 4 siècles de musique</span></div></footer>
+</div>
 
 <script>
+/* Fenêtres discographie : ouverture, fermeture, focus conservé dans la fenêtre */
 (function(){
   const modals = document.querySelectorAll('.album-modal');
   const openers = document.querySelectorAll('[data-modal]');
+  const pageParts = [document.querySelector('header'), document.querySelector('main'), document.querySelector('footer')];
+  const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
   let lastTrigger = null;
+
+  function setPageInert(state){ pageParts.forEach(function(p){ if(p) p.inert = state; }); }
 
   function openModal(id, trigger){
     const modal = document.getElementById(id);
@@ -883,6 +1046,7 @@
     lastTrigger = trigger || null;
     modal.classList.add('is-open');
     document.body.classList.add('modal-open');
+    setPageInert(true);
     const close = modal.querySelector('.modal-close');
     if(close) close.focus();
   }
@@ -891,18 +1055,29 @@
     if(!modal) return;
     modal.classList.remove('is-open');
     document.body.classList.remove('modal-open');
+    setPageInert(false);
     if(lastTrigger) lastTrigger.focus();
   }
 
   openers.forEach(function(button){
-    button.addEventListener('click', function(){ openModal(button.dataset.modal, button); });
+    button.addEventListener('click', function(event){
+      if(button.tagName === 'A') event.preventDefault();
+      openModal(button.dataset.modal, button);
+    });
   });
 
   modals.forEach(function(modal){
     const close = modal.querySelector('.modal-close');
     if(close) close.addEventListener('click', function(){ closeModal(modal); });
-    modal.addEventListener('click', function(event){
-      if(event.target === modal) closeModal(modal);
+    modal.addEventListener('click', function(event){ if(event.target === modal) closeModal(modal); });
+    modal.querySelectorAll('[data-close]').forEach(function(link){ link.addEventListener('click', function(){ closeModal(modal); }); });
+    modal.addEventListener('keydown', function(event){
+      if(event.key !== 'Tab') return;
+      const items = Array.prototype.slice.call(modal.querySelectorAll(FOCUSABLE)).filter(function(el){ return el.offsetParent !== null; });
+      if(!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if(event.shiftKey && document.activeElement === first){ event.preventDefault(); last.focus(); }
+      else if(!event.shiftKey && document.activeElement === last){ event.preventDefault(); first.focus(); }
     });
   });
 
@@ -913,23 +1088,50 @@
     }
   });
 })();
-</script>
 
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const mobileNav = document.querySelector('.navlinks');
+/* Menu téléphone : état annoncé, fermeture par Échap ou clic à l'extérieur */
+(function(){
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('menu-principal');
+  if(!toggle || !nav) return;
 
-  if(menuToggle && mobileNav){
-    menuToggle.addEventListener('click', function () {
-      mobileNav.classList.toggle('mobile-open');
-    });
-
-    mobileNav.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function () {
-        mobileNav.classList.remove('mobile-open');
-      });
-    });
+  function setOpen(open){
+    nav.classList.toggle('mobile-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
   }
+
+  toggle.addEventListener('click', function(){ setOpen(!nav.classList.contains('mobile-open')); });
+  nav.querySelectorAll('a').forEach(function(link){ link.addEventListener('click', function(){ setOpen(false); }); });
+  const cta = document.querySelector('.navcta');
+  if(cta) cta.addEventListener('click', function(){ setOpen(false); });
+  document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' && nav.classList.contains('mobile-open')){ setOpen(false); toggle.focus(); }
+  });
+  document.addEventListener('click', function(event){
+    if(nav.classList.contains('mobile-open') && !nav.contains(event.target) && !toggle.contains(event.target)) setOpen(false);
+  });
+})();
+
+/* Vidéos : lecture dans la page au clic, sans rien charger de YouTube avant */
+(function(){
+  document.querySelectorAll('.extrait[data-video]').forEach(function(card){
+    const button = card.querySelector('.extrait-lecture');
+    if(!button) return;
+    button.addEventListener('click', function(){
+      const id = card.dataset.video;
+      const start = card.dataset.start ? '&start=' + card.dataset.start : '';
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0' + start;
+      iframe.title = card.querySelector('h3') ? card.querySelector('h3').textContent : 'Vidéo';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+      button.replaceWith(iframe);
+      iframe.focus();
+    });
+  });
+})();
 </script>
 </body>
 </html>
